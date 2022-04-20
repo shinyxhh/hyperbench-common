@@ -35,10 +35,6 @@ type Blockchain interface {
 	// ResetContext reset test group context in go client
 	ResetContext() error
 
-	// Statistic query the statistics information in the time interval defined by
-	// nanosecond-level timestamps `from` and `to`
-	Statistic(statistic Statistic) (*RemoteStatistic, error)
-
 	// LogStatus records blockheight and time
-	LogStatus() (int64, error)
+	LogStatus() (ChainInfo, error)
 }
