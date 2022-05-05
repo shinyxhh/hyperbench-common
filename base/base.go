@@ -25,8 +25,8 @@ type ClientConfig struct {
 	Options map[string]interface{} `mapstructure:"options"`
 
 	// index
-	VmIdx int64 `mapstructure:"vmIdx"`
-	WkIdx int64 `mapstructure:"wkIdx"`
+	VmIdx int `mapstructure:"vmIdx"`
+	WkIdx int `mapstructure:"wkIdx"`
 }
 
 // Confirm confirm invoke result for tx.

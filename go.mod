@@ -1,4 +1,4 @@
-module github.com/hyperbench/hyperbench-common
+module github.com/shinyxhh/hyperbench-common
 
 go 1.16
 
